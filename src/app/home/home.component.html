@@ -25,7 +25,10 @@
     <div class="card text-white bg-info m-2 col-md-4 col-lg-4" style="max-width: 20rem;">
       <div class="card-header">Informations Complémentaires</div>
       <div class="card-body" style="font-size: 15px;">
-        <p> <span style="font-weight: 800">Temps: </span><span style="text-transform: capitalize"> {{weather.list[0].weather[0].description}}</span></p>
+        <p> <span style="font-weight: 800">Temps: </span><span style="text-transform: capitalize">
+          {{weather.list[0].weather[0].description}}</span>
+        </p>
+        <img src="http://openweathermap.org/img/wn/{{weather.list[0].weather[0].icon}}@2x.png" alt="weathers"/>
         <p> <span style="font-weight: 800">Humidité :</span> {{weather.list[0].main.humidity}} %</p>
       </div>
     </div>
