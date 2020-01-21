@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h1 class="text-center primary" style="margin-top: 50px"> Entrez votre ville </h1>
+
+
+  <form >
+    <div class="form-group">
+      <label>Ville</label>
+      <input type="text"  class="form-control"  name="city" [(ngModel)]="city"   >
+
+
+      <label>Code Pays (Facultatif)</label>
+      <input type="text"  class="form-control" name="code" [(ngModel)]="code"   >
+
+
+    </div>
+
+    <button class="btn btn-success" (click)="saveForm()">Sauvegarder</button>
+
+
+  </form>
+
+</div>

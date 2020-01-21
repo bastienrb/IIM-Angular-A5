@@ -1,0 +1,36 @@
+<div class="container">
+
+
+  <div class="info" style="margin-top: 50px;">
+    <h1 class="display-3">{{weather.city.name}}</h1>
+    <br>
+    <div class="row offset-1 animated fadeIn ">
+    <div class="card text-white bg-dark m-2 col-md-4 col-lg-4" style="max-width: 20rem;">
+      <div class="card-header">Coordonnées</div>
+      <div class="card-body" style="font-size: 15px;">
+        <p> <span style="font-weight: 800">Longitude: </span>{{weather.city.coord.lon}}&deg;</p>
+        <p> <span style="font-weight: 800">Latitude: </span>{{weather.city.coord.lat}}&deg;</p>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-warning m-2 col-md-4 col-lg-4" style="max-width: 20rem;">
+      <div class="card-header">Températures</div>
+      <div class="card-body" style="font-size: 15px;">
+        <p> <span style="font-weight: 800">Température: </span><span style="text-transform: capitalize"> {{weather.list[0].main.temp}} &deg;C</span></p>
+        <p> <span style="font-weight: 800">Température Max :</span> {{weather.list[0].main.temp_max}} &deg;C</p>
+        <p> <span style="font-weight: 800">Température Min:</span> {{weather.list[0].main.temp_min}} &deg;C</p>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-info m-2 col-md-4 col-lg-4" style="max-width: 20rem;">
+      <div class="card-header">Informations Complémentaires</div>
+      <div class="card-body" style="font-size: 15px;">
+        <p> <span style="font-weight: 800">Temps: </span><span style="text-transform: capitalize"> {{weather.list[0].weather[0].description}}</span></p>
+        <p> <span style="font-weight: 800">Humidité :</span> {{weather.list[0].main.humidity}} %</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+</div>
